@@ -1,17 +1,17 @@
-import React from 'react'; 
-
+import { useState } from 'react';
+import './Card.css';
 export function Card({front,back}) {
-  const [checkCard, setCheckCard] = React.useState(false);
-  
-  const className = `card ${checkCard ? 'card-check' : ''}`;
-  
-  const handleClick = () => {
-    setCheckCard(!checkCard);
-  };
-  
-  return (
-    <div className={className} onClick={handleClick} data-back={back}>
-      {front}
-    </div>
-  );
+    const [checkCard, setCheckCard] = useState(false);
+
+    const handleClick = () => {
+        setCheckCard(!checkCard);
+    };
+
+    return (
+        <div
+            className={`card ${checkCard ? 'card-check' : ''}`}
+            onClick={handleClick}
+            data-back={back}>{front}
+        </div>
+    );
 }

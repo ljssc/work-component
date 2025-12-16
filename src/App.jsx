@@ -1,22 +1,27 @@
-import "./App.css"; // подключаю стили
-import { useState } from "react"; // подключаю хук для управления состоянием компонентов
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { PageViewSet } from './components/PageViewSet';
+import { PageCreateSet } from './components/PageCreateSet';
+import { PageSelectSet } from './components/PageSelectSet';
+import { FormCreateSet } from './components/FormCreateSet';
+import { FormCreateCard } from './components/FormCreateCard';
+import { PageNotFound } from './components/PageNotFound';
 
-
-import {Header} from "./components/Header"; // подключаю хеадер компонент
-import {Set} from "./components/Set"; // подключаю сет компонент
-
+import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     <div className="App">
-        <Header/>
-        <Set/>
-     </div>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<PageSelectSet/>}/>
+        <Route path='/set/:id' element={<PageViewSet/>}/>
+        <Route path='/admin' element={<PageCreateSet/>}>
+          <Route path='createset' element={<FormCreateSet/>}/>
+          <Route path='createcard' element={<FormCreateCard/>}/>
+        </Route>
+        <Route path='*' element={<PageNotFound/>}/>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App

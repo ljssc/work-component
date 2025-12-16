@@ -2,16 +2,37 @@
     {
         "id": 1,
         "front":"яблоко",
-        "back": "apple"
+        "back": "apple",
+        "setName":"English"
     },
     {
         "id": 2,
         "front":"арбуз",
-        "back": "watermelon"
+        "back": "watermelon",
+        "setName":"English"
     },
     {
         "id": 3,
         "front":"ананас",
-        "back": "pineapple"
+        "back": "pineapple",
+        "setName":"English"
+    },
+    {
+        "id": 4,
+        "front": "молоток",
+        "back": "hammer",
+        "setName":"tools"
+    },
+     {
+        "id": 5,
+        "front": "отвертка",
+        "back": "screwdriver",
+        "setName":"tools"
+    }, 
+    {
+        "id": 6,
+        "front": "кувалда",
+        "back": "sledgehammer",
+        "setName":"tools"
     }
     ]

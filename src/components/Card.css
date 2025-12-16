@@ -1,0 +1,31 @@
+.card {
+  height: 200px;
+  width: 200px;
+  background-color: #a6b1d1;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  border: solid 1px #a6b1d1de;
+  margin: 10px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.card-check{
+  transform: rotateY(180deg);
+}
+.card::after{
+  content: attr(data-back);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a6b1d1;
+  border:solid 1px #a6b1d1de ;
+  border-radius: 20px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}

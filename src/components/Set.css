@@ -1,0 +1,57 @@
+.set-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.set-name {
+    margin-bottom: 30px;
+    color: #fcfcfc;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.counter {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.control-button {
+    background: #ffffff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    
+}
+
+.control-button:hover {
+    background: #d0ff00;
+}
+
+.control-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+.set-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  list-style: none; 
+  padding: 0;
+  margin-top: 40px; 
+}
+
+.set-list li {
+  margin: 0;
+}

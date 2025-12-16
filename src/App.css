@@ -8,13 +8,13 @@
 }
 
 body{
-  background-color: #dcd7d0;
-  color: #01060f;
+  background-color: #F9f9fd;
+  color: #1f1e2e;
 }
 
-
+/* 
 .header {
-  background-color: #01060f;
+  background-color: #ffffff;
   color: #dcd7d0;
   position: fixed; 
   top: 0;
@@ -22,8 +22,8 @@ body{
   right: 0;
   width: 100%;
   z-index: 1000; 
-}
-
+} */
+/* 
 .card {
   height: 200px;
   width: 200px;
@@ -55,3 +55,5 @@ body{
   transform: rotateY(180deg);
   backface-visibility: hidden;
 }
+
+ */
