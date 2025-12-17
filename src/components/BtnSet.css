@@ -17,11 +17,14 @@
 .list-set__item{
     background-color: white;
     border: #000000 2px solid;
-    border-radius: 10%;
-    width: 100px;
+    height: 50px;
+    width: 200px;
     padding: 10px;
     transition: all 0.2s ease-in-out;
-    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .list-set__item:hover,
 .list-set__item:focus{
